@@ -1,7 +1,14 @@
-package com.anncode.amazonviewer.model;
+package org.daniel.model;
 
 import java.util.ArrayList;
 
+
+/**
+ * Esta clase es la representación de un objeto {@code Serie} y herada de {@link  Film}
+ * @author dacif
+ * @version 1.0
+ * @since 2023
+ * */
 public class Serie extends Film  {
 
 	private int id;
@@ -61,6 +68,9 @@ public class Serie extends Film  {
 		return series;
 	}
 
+	/**
+	 * {@inheritDoc}
+	 * */
 	@Override
 	public void view() {
 		setViewed(true);

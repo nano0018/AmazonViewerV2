@@ -1,7 +1,13 @@
-package com.anncode.amazonviewer.model;
+package org.daniel.model;
 
 import java.util.Date;
 
+/**
+ * Esta clase es la representación de un objeto {@code Publication} tales como libros {@link Book} y revistas {@link Magazine}
+ * @author dacif
+ * @version 1.0
+ * @since 2023
+ * */
 public class Publication {
 
 	private String title;

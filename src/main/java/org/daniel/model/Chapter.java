@@ -1,8 +1,15 @@
-package com.anncode.amazonviewer.model;
+package org.daniel.model;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 
+/**
+ * Esta clase es la representación de un objeto {@code Chapter} y herada de {@link  Movie}
+ * @see Film
+ * @author dacif
+ * @version 1.0
+ * @since 2023
+ * */
 public class Chapter extends Movie {
 
 
@@ -63,6 +70,9 @@ public class Chapter extends Movie {
         return chapters;
     }
 
+    /**
+     * {@inheritDoc}
+     * */
     @Override
     public void view() {
 		super.view();

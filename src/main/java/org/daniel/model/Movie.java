@@ -1,8 +1,15 @@
-package com.anncode.amazonviewer.model;
+package org.daniel.model;
 
 import java.util.ArrayList;
 import java.util.Date;
 
+/**
+ * Esta clase es la representación de un objeto {@code Movie} y herada de {@link  Film}
+ * e implementa {@link IVisualizable}
+ * @author dacif
+ * @version 1.0
+ * @since 2023
+ * */
 public class Movie extends Film implements IVisualizable {
 
 	private int id;
@@ -29,7 +36,6 @@ public class Movie extends Film implements IVisualizable {
 
 	@Override
 	public String toString() {
-		// TODO Auto-generated method stub
 		return  "\n :: MOVIE ::" +
 				"\n Title: " + getTitle() +
 				"\n Genero: " + getGenre() +
@@ -38,12 +44,18 @@ public class Movie extends Film implements IVisualizable {
 				"\n Duration: " + getDuration();
 	}
 
+	/**
+	 * {@inheritDoc}
+	 * */
 	@Override
 	public Date startToSee(Date dateI) {
 		// TODO Auto-generated method stub
 		return dateI;
 	}
 
+	/**
+	 * {@inheritDoc}
+	 * */
 	@Override
 	public void stopToSee(Date dateI, Date dateF) {
 		// TODO Auto-generated method stub
@@ -67,6 +79,9 @@ public class Movie extends Film implements IVisualizable {
 		return movies;
 	}
 
+	/**
+	 * {@inheritDoc}
+	 * */
 	@Override
 	public void view() {
 		this.setViewed(true);

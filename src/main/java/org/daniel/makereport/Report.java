@@ -1,4 +1,4 @@
-package com.anncode.makereport;
+package org.daniel.makereport;
 
 import java.io.BufferedWriter;
 import java.io.File;
@@ -7,6 +7,19 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
 
+/**
+ * <h2>Report</h2>
+ * <p>
+ *  Report es una clase que se encarga de generar reportes.
+ *  <p>
+ *  Para ello se apoya de las clases {@code FileOutputStream}, {@code OutputStreamWriter} y {@code BufferedWriter}
+ *  para escribir el archivo.
+ *  <p>
+ *  Al ser un reporte puede ser visualizado en diferentes formatos como son {@code .txt}.
+ * @author dacif
+ * @version 1.0
+ * @since 2023
+ * */
 public class Report {
 	
 	private String nameFile;
@@ -33,6 +46,9 @@ public class Report {
 		this.content = content;
 	}
 	
+	/**
+	 * Este método genera el reporte en formato {@code .txt} de un objeto {@code Report}.
+	 * */
 	public void makeReport() {
 		if ( (getNameFile() != null) && (getTitle() != null) && (getContent() != null) ) {
 			//Crear el archivo

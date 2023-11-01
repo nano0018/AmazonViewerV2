@@ -1,4 +1,4 @@
-package com.anncode.util;
+package org.daniel.util;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package com.anncode.makereport;
+package org.daniel.makereport;
 
 public class Main {
 
